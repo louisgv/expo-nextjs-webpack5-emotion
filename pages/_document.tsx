@@ -1,3 +1,1 @@
-import Document from "@expo/next-adapter/document";
-
-export default Document;
+export { default } from "@expo/next-adapter/document"
