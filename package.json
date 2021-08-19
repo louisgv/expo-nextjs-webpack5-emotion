@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "prestart": "rm -rf .next .expo node_modules/.cache",
     "dev": "next dev"
   },
   "dependencies": {

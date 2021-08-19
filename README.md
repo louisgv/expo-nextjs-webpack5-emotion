@@ -1,26 +1,12 @@
-# expo-nextjs-webpack-5
+# expo-nextjs-webpack5-emotion
 
-An experiment to get the @expo/next-adapter working with the latest NextJS 11.x features
+An experiment to get a bunch of stuff working together:
 
-- [x] Support NextJS 11 (released in @expo/next-adapter v3 🥳)
-- [ ] Support NextJS ESM modules
-
-## TLDR: How to use this in your own project
-
-- `npm i --save-dev postcss`
-- Copy the patches folder to your project
-- Add `"postinstall": "npx patch-package",` to your package.json scripts
-- `npm install --legacy-peer-deps`
-
-### FYI
-
-The expo packages are in active development and the version numbers may not match the patches listed here. They should still work, but just create an issue if they don't
+  - [x] [Next.js]
+  - [x] [Webpack 5]
+  - [x] [@emotion/native]
 
 ## Known Issues
-
-> NPM install fails due to peer dependencies
-
-Use `--legacy-peer-deps` when installing
 
 > React-native-web cannot use import outside of module
 
