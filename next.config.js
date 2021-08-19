@@ -1,9 +1,12 @@
-const { withExpo } = require("@expo/next-adapter");
-const withPlugins = require("next-compose-plugins");
+const { withExpo } = require("@expo/next-adapter")
+const withPlugins = require("next-compose-plugins")
 
-const withTM = require("next-transpile-modules")(["react-native-web"]);
+const withTM = require("next-transpile-modules")([
+  "react-native-web",
+  "@emotion/native"
+])
 
 module.exports = withPlugins(
   [withTM, [withExpo, { projectRoot: __dirname }]],
   {}
-);
+)

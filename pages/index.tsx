@@ -1,25 +1,28 @@
-import { StyleSheet, ActivityIndicator, View, Text } from "react-native";
-import styleModule from "../styles.module.css"
+import { ActivityIndicator, View, Text } from "react-native"
+
+import styled from "@emotion/native"
+
+const Button = styled.Pressable`
+  background-color: #ff0000;
+  width: 100px;
+  height: 100px;
+`
+
+const Test = styled(Button)`
+  background-color: purple;
+`
 
 export default function IndexPage() {
   return (
     <View>
-      <Text style={styles.text}>Hello, World!</Text>
+      <Text>Hello, World!</Text>
       <ActivityIndicator />
-<button
-      type="button"
-      // Note how the "error" class is accessed as a property on the imported
-      // `styles` object.
-      className={styleModule.error}
-    >
-      Error
-    </button>
+      <Button>
+        <Text>Button</Text>
+      </Button>
+      <Test>
+        <Text>Test</Text>
+      </Test>
     </View>
-  );
+  )
 }
-
-const styles = StyleSheet.create({
-  text: {
-    color: "red",
-  },
-});
